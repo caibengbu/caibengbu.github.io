@@ -34,7 +34,9 @@
             background-color: #555;
         }
         .container {
-            padding: 7rem;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1rem;
         }
         .section {
             margin-bottom: 2rem;
@@ -85,7 +87,17 @@
             width: 100%;
             bottom: 0;
         }
-        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            .research-title,
+            .research-coauthors,
+            .research-journal,
+            .research-attachement {
+                padding-left: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -117,13 +129,13 @@
             -->
             <div class="research-project">
                 <p class="research-title">Endogeneous Production Network and Knowledge Diffusion in Supplier-Customer Relationships</p>
-                <p class="research-attachement"> <a href="https://github.com/caibengbu/caibengbu.github.io/blob/main/files/endo_prodnet_knowdiff_abstract.pdf" target="_blank">| abstract |</a></p>
+                <p class="research-attachement"> <a href="https://raw.githubusercontent.com/caibengbu/caibengbu.github.io/main/files/endo_prodnet_knowdiff_abstract.pdf" target="_blank">| abstract |</a></p>
             </div>
         </section>
         <section id="teaching" class="section">
             <h2>Teaching</h2>
             <ul>
-                <li>Teaching Assistant for PhD21 Computational Methods, University of Cambridge, 2024 Michaelmas <a href="link_to_slides_or_draft.pdf" target="_blank">[code]</a></li>
+                <li>Teaching Assistant for PhD21 Computational Methods, University of Cambridge, 2024 Michaelmas <a href="https://github.com/caibengbu/CamEconPhD21" target="_blank">[code]</a></li>
                 <li>Teaching Assistant for R201 Advanced Macroeconomics, University of Cambridge, 2025 Lent</li>
             </ul>
         </section>
