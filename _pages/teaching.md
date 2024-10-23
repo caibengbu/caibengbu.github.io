@@ -5,4 +5,4 @@ permalink: /teaching/
 author_profile: true
 ---
 
-- [TA materials for PhD21 Computational Social Sciences](https://github.com/caibengbu/CamEconPhD21)
+- [TA materials for PhD21 Computational Methods](https://github.com/caibengbu/CamEconPhD21)
