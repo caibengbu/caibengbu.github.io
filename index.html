@@ -41,6 +41,33 @@
         .section {
             margin-bottom: 2rem;
         }
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        .portrait-wrap {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            overflow: hidden;
+            flex: 0 0 180px;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .about-text {
+            margin: 0;
+        }
+        .portrait {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: scale(2.5);
+            transform-origin: center;
+        }
+        .after-portrait {
+            clear: both;
+        }
         .research-title {
             margin-bottom: -1.0rem;
             font-size: 1.05em;
@@ -91,6 +118,14 @@
             .container {
                 padding: 2rem;
             }
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .portrait-wrap {
+                display: block;
+                margin: 0 auto 1rem auto;
+            }
             .research-title,
             .research-coauthors,
             .research-journal,
@@ -114,9 +149,14 @@
     <div class="container">
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>Hi all, welcome to my page! I am a PhD student in Economics at the University of Cambridge. I am supervised by <a href="https://vasco-m-carvalho.github.io/" target="_blank">Vasco Carvalho</a>. My research interests are International Trade, Firm Dynamics, Macroeconomics.</p>
+            <div class="about-content">
+                <div class="portrait-wrap">
+                    <img src="files/DSC_6474.jpg" alt="Portrait of Ye Sun" class="portrait">
+                </div>
+                <p class="about-text">Hi all, welcome to my page! I am a PhD student in Economics at the University of Cambridge. I am supervised by <a href="https://vasco-m-carvalho.github.io/" target="_blank">Vasco Carvalho</a>. My research interests are International Trade, Firm Dynamics, Macroeconomics.</p>
+            </div>
         </section>
-        <section id="research" class="section">
+        <section id="research" class="section after-portrait">
             <h2>Work in Progress</h2>
             <!-- Add your research projects here -->
             <!-- this is a template 
